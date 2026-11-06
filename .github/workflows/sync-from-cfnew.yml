@@ -28,7 +28,7 @@ jobs:
 
           LATEST_RELEASE=$(curl -fsSL \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/byJoey/cfnew/releases/latest)
+            https://api.github.com/repos/byJoey/cfnew/releases/tags/v2026.10.17.2)
 
           VERSION=$(echo "$LATEST_RELEASE" | jq -r '.tag_name // empty')
 
